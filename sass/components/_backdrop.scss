@@ -1,0 +1,193 @@
+.backdrop {
+    position: fixed;
+     height: 100vh;
+    width: 100vw; 
+    background-color: rgba(0, 0, 0, 0.2);
+    top:0;
+    transition: opacity 250ms, visibility 250ms;
+  }
+  
+  .backdrop-modal{
+    position:absolute;
+    width: 528px;
+    min-height: 581px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+     left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+  }
+  
+  .backdrop-btn{
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+  }
+  
+  .backdrop-btn:focus,
+  .backdrop-btn:hover{
+    fill:var(--accent-color);
+    cursor: pointer;
+    transition: fill 250ms;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+  }
+  
+  .backdrop-form{
+    padding: 40px;
+  }
+  
+  .backdrop-title {
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
+  
+  .backdrop-contacts{
+    margin-bottom: 10px;
+  }
+  
+  .backdrop-label {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: #757575;
+  }
+  
+  .backdrop-input-contacts{
+    width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 40px;
+    padding-left: 42px;
+    &:focus{
+      border: 1px solid #2196F3;
+      box-sizing: border-box;
+      border-radius: 4px;
+      transition: border 250ms;
+      transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    }
+  }
+  
+  .backdrop-input-contacts:focus + .backdrop-icon{
+    fill:var(--accent-color);
+    transition: fill 250ms;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+  }
+  
+  .backdrop-input-btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    background-color: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+  }
+  
+  .backdrop-agreement {
+    display: flex;
+    margin-bottom: 30px; 
+  }
+  
+  .backdrop-agreement-icon {
+    padding: 4px 2px 3px 3px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    fill:var(--white);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .backdrop-icon-check {
+    margin-right: 7px;
+    display: flex;
+  }
+  
+  .backdrop-agreement-label {
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
+  
+  .backdrop-input-checkbox:checked + .backdrop-agreement-icon {
+    background: var(--accent-color);
+    border: none;
+  }
+  
+  .backdrop-link {
+    color:var(--accent-color);
+  }
+  
+  .backdrop-input-btn:focus,
+  .backdrop-input-btn:hover {
+    background-color: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+  }
+  
+  .backdrop-textarea-comment {
+    margin-top: 4px;
+    padding: 12px 16px 12px 16px;
+    resize: none;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    &:focus{
+      border: 1px solid #2196F3;
+      box-sizing: border-box;
+      border-radius: 4px;
+      transition: border 250ms;
+      transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    }
+  }
+  
+  .backdrop-textarea-comment::placeholder {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+  
+  .backdrop-input-wrap {
+    margin-top: 4px;
+    display: block;
+    position: relative;
+  }
+  
+  .backdrop-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
