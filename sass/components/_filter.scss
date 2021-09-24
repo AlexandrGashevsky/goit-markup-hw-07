@@ -1,14 +1,14 @@
-.projects-filter-list {
+.projects-filter {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
   }
   
-  .projects-filter-item:not(:last-child) {
+  .projects-filter__item:not(:last-child) {
     margin-right: 8px;
   }
   
-  .projects-filter-btn {
+  .projects-filter__btn {
     padding-top: 6px;
     padding-bottom: 6px;
     padding-left: 22px;

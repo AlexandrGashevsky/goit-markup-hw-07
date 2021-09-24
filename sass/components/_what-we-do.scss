@@ -1,40 +1,40 @@
 .what-we-do {
-    padding-top: 0;
-  }
-  
-  .what-we-do-header {
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-bottom: 50px;
-  }
-  
-  .what-we-do-list {
-    display: flex;
-  }
-  
-  .what-we-do-item:not(:last-child) {
+  padding-top: 0;
+}
+
+.what-we-do__header {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.what-we-do-list {
+  display: flex;
+}
+
+
+.what-we-do-list__item {
+  position: relative;
+  height: 294px;
+  &:not(:last-child) {
     margin-right: 30px;
   }
-  
-  .what-we-do-item {
-    position: relative;
-    height: 294px;
-  }
-  
-  .what-we-do-paragraph{
-    width: 100%;
-    padding-top: 27px;
-    padding-bottom: 27px; 
-    background-color: rgba(47, 48, 58, 0.8);
-     position: absolute; 
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-    bottom: 0; 
-  }
+}
+
+.what-we-do-paragraph{
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px; 
+  background-color: rgba(47, 48, 58, 0.8);
+   position: absolute; 
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  bottom: 0; 
+}

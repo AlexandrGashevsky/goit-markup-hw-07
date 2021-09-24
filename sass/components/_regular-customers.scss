@@ -1,4 +1,4 @@
-.regular-customers-title {
+.regular-customers__title {
     font-weight: bold;
     font-size: 36px;
     line-height: 1.17;
@@ -11,37 +11,35 @@
     display: flex;
   }
   
-  .regular-customers-link {
-    width: 170px;
-    height: 92px;
-    border: 1px solid #AFB1B8;
-    box-sizing: border-box;
-    border-radius: 4px;
-    display: flex; 
-    align-items: center;
-    justify-content: center;
+  .regular-customers-list__link {
+      width: 170px;
+      height: 92px;
+      border: 1px solid #AFB1B8;
+      box-sizing: border-box;
+      border-radius: 4px;
+      display: flex; 
+      align-items: center;
+      justify-content: center;
+      &:hover, 
+      &:focus {
+      border-color:var(--accent-color);
+      cursor: pointer;
+      transition: border-color 250ms;
+      transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    } 
+    &:hover .regular-customers-list__icon, 
+    &:focus .regular-customers-list__icon {
+      fill:var(--accent-color);
+      transition: fill 250ms;
+      transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    }
   }
   
-  .regular-customers-item:not(:last-child){
+  .regular-customers-list__item:not(:last-child){
     margin-right: 30px;
   }
   
-  .regular-customers-icon {
+  .regular-customers-list__icon {
     fill:#AFB1B8;
-  }
-  
-   .regular-customers-link:hover, 
-  .regular-customers-link:focus {
-    border-color:var(--accent-color);
-    cursor: pointer;
-    transition: border-color 250ms;
-    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
-  } 
-  
-  .regular-customers-link:hover .regular-customers-icon, 
-  .regular-customers-link:focus .regular-customers-icon {
-    fill:var(--accent-color);
-    transition: fill 250ms;
-    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
   }
   

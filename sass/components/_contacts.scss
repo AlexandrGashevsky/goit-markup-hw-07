@@ -1,13 +1,11 @@
 .contacts {
     text-decoration: none;
-  }
-  
-  .contacts:hover,
-  .contacts:focus {
+    &:hover,
+    &:focus {
     color: var(--accent-color);
     fill: var(--accent-color);
     transition: fill 250ms, color 250ms;
     transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
-  }
+  }  
+}
   
- 

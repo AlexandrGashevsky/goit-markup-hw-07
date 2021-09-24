@@ -19,7 +19,7 @@
     transform: translate(-50%, -50%); 
   }
   
-  .backdrop-btn{
+  .backdrop__btn{
     width: 30px;
     height: 30px;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -29,14 +29,13 @@
     position: absolute;
     right: 8px;
     top: 8px;
-  }
-  
-  .backdrop-btn:focus,
-  .backdrop-btn:hover{
-    fill:var(--accent-color);
-    cursor: pointer;
-    transition: fill 250ms;
-    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    &:focus,
+    &:hover{
+      fill:var(--accent-color);
+      cursor: pointer;
+      transition: fill 250ms;
+      transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    }
   }
   
   .backdrop-form{
@@ -53,18 +52,18 @@
     color: #212121;
   }
   
-  .backdrop-contacts{
+  .backdrop__contact{
     margin-bottom: 10px;
   }
   
-  .backdrop-label {
+  .backdrop__label {
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
     color: #757575;
   }
   
-  .backdrop-input-contacts{
+  .backdrop__input-contact{
     width: 100%;
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
@@ -80,13 +79,15 @@
     }
   }
   
-  .backdrop-input-contacts:focus + .backdrop-icon{
-    fill:var(--accent-color);
-    transition: fill 250ms;
-    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+  .backdrop__input-contact{
+    &:focus + .backdrop__icon  {
+      fill:var(--accent-color);
+      transition: fill 250ms;
+      transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    }
   }
   
-  .backdrop-input-btn{
+  .backdrop__input-btn{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -102,6 +103,13 @@
     line-height: 1.87;
     letter-spacing: 0.06em;
     color: #FFFFFF;
+    &:focus,
+    &:hover {
+    background-color: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+  }
   }
   
   .backdrop-agreement {
@@ -109,7 +117,7 @@
     margin-bottom: 30px; 
   }
   
-  .backdrop-agreement-icon {
+  .backdrop__agreement-icon {
     padding: 4px 2px 3px 3px;
     border: 2px solid #212121;
     border-radius: 2px;
@@ -119,12 +127,12 @@
     justify-content: center;
   }
   
-  .backdrop-icon-check {
+  .backdrop__icon-check {
     margin-right: 7px;
     display: flex;
   }
   
-  .backdrop-agreement-label {
+  .backdrop__agreement-label {
     margin-left: auto;
     margin-right: auto;
     align-items: center;
@@ -135,24 +143,21 @@
     color: #757575;
   }
   
-  .backdrop-input-checkbox:checked + .backdrop-agreement-icon {
-    background: var(--accent-color);
-    border: none;
+  .backdrop__input-checkbox {
+    &:checked{ 
+      &+ .backdrop__agreement-icon {
+      background: var(--accent-color);
+      border: none;
+      }
+    }
   }
   
-  .backdrop-link {
+  .backdrop__link {
     color:var(--accent-color);
   }
+
   
-  .backdrop-input-btn:focus,
-  .backdrop-input-btn:hover {
-    background-color: #188CE8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    transition: background-color 250ms;
-    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
-  }
-  
-  .backdrop-textarea-comment {
+  .backdrop__textarea-comment {
     margin-top: 4px;
     padding: 12px 16px 12px 16px;
     resize: none;
@@ -169,23 +174,22 @@
       transition: border 250ms;
       transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
     }
+    &::placeholder {
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+    } 
   }
   
-  .backdrop-textarea-comment::placeholder {
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
-  }
-  
-  .backdrop-input-wrap {
+  .backdrop__input-wrap {
     margin-top: 4px;
     display: block;
     position: relative;
   }
   
-  .backdrop-icon {
+  .backdrop__icon {
     position: absolute;
     left: 12px;
     top: 50%;
